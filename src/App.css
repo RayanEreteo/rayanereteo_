@@ -1,0 +1,24 @@
+/* Import NES.css and the pixel font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://unpkg.com/nes.css@latest/css/nes.min.css');
+
+:root {
+  --container-bg: gainsboro;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+#navbar {
+  background-color: var(--container-bg);
+}
+
+.btns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+}
