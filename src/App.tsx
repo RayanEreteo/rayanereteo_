@@ -17,14 +17,18 @@ function App() {
     <main>
       <nav>
         <div className="nes-container with-title is-centered" id='navbar'>
-          <p className='title'>Menu Principal</p>
-          <h1 className='nes-text'>Rayan Ereteo</h1>
+          <h1 className='nes-text'>Rayan Ereteo <span><i className="nes-octocat animate"></i></span></h1>
           <div className="btns-container">
-            <a href="" className='nes-btn'>Mes Quêtes</a>
-            <button className='nes-btn' onClick={downloadCV} onMouseEnter={() => setDownloadCVText("Télécharger CV")} onMouseLeave={() => setDownloadCVText("Fiche Personnage")}>{downloadCVText}</button>
+            <a href="" className='nes-btn is-primary'>Mes Quêtes</a>
+            <button className='nes-btn is-success' onClick={downloadCV} onMouseEnter={() => setDownloadCVText("Télécharger CV")} onMouseLeave={() => setDownloadCVText("Fiche Personnage")}>{downloadCVText}</button>
           </div>
         </div>
       </nav>
+      <div className='mt' id='presentation'>
+        <h2 className='nes-text'>Qui suis-je ?</h2>
+        <br />
+        <p>Mon nom est <span className='nes-text is-primary'>Rayan</span>, Je suis un développeur passionné</p>
+      </div>
     </main>
   )
 }
