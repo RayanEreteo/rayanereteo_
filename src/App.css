@@ -26,3 +26,13 @@ body {
   justify-content: center;
   gap: 12px;
 }
+
+#socials {
+  background-color: var(--container-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  max-height: 100px;
+  gap: 4rem;
+}
