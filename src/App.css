@@ -12,6 +12,10 @@ body {
   padding: 20px;
 }
 
+.mt {
+  margin-top: 4rem;
+}
+
 #navbar {
   background-color: var(--container-bg);
 }
