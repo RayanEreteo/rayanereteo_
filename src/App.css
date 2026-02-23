@@ -6,6 +6,10 @@
   --container-bg: gainsboro;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Press Start 2P', cursive;
   background-color: #f4f4f4;
