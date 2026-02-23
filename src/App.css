@@ -97,6 +97,45 @@ body {
   line-height: 1.6;
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+  word-break: break-all;
+}
+
+.mt-small {
+  margin-top: 1.5rem;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  #presentation-text {
+    width: 100%;
+  }
+}
+
+.nes-phone-icon::before {
+  content: "📞";
+  margin-right: 10px;
+}
+
 @media (max-width: 768px) {
   .project-body {
     flex-direction: column;

@@ -72,6 +72,47 @@ function App() {
           <Project title='Live Pictures' description="”Live Pictures” est une application permettant d'envoyer en temps réel des images a toutes personnes présentes dans un canal." thumbnail={livePictureT} projectURL='https://github.com/RayanEreteo/LivePictures'></Project>
         </div>
       </div>
+      <div className="mt" id="contact">
+        <h2 className="nes-text">Envoyer un Hibou</h2>
+
+        <div className="contact-grid">
+          <div className="nes-container with-title is-dark">
+            <p className="title">Coordonnées</p>
+            <div className="contact-item">
+              <i className="nes-icon gmail is-small"></i>
+              <span>rayan.ereteo@email.com</span>
+            </div>
+            <div className="contact-item mt-small">
+              <i className="nes-icon whatsapp is-small"></i>
+              <span>06 00 00 00 00</span>
+            </div>
+          </div>
+
+          <div className="nes-container with-title">
+            <p className="title">Formulaire de Contact</p>
+            <form>
+              <div className="nes-field">
+                <label htmlFor="name_field">Nom / Pseudo</label>
+                <input type="text" id="name_field" className="nes-input" placeholder="Aventurier" />
+              </div>
+
+              <div className="nes-field mt-small">
+                <label htmlFor="email_field">Email</label>
+                <input type="email" id="email_field" className="nes-input" placeholder="ton@email.com" />
+              </div>
+
+              <div className="nes-field mt-small">
+                <label htmlFor="textarea_field">Message</label>
+                <textarea id="textarea_field" className="nes-textarea" placeholder="Quelle est votre requête ?"></textarea>
+              </div>
+
+              <div className="form-actions mt-small">
+                <button type="submit" className="nes-btn is-primary">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
   )
 }
