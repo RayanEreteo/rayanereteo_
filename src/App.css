@@ -27,6 +27,10 @@ body {
   gap: 12px;
 }
 
+#presentation-text {
+  width: 60rem;
+}
+
 #socials {
   background-color: var(--container-bg);
   display: flex;
