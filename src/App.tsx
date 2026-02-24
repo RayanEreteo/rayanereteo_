@@ -1,12 +1,17 @@
 import { useState } from 'react'
-import './App.css'
 import Project from './components/Project';
+import { useForm, ValidationError } from '@formspree/react';
 
+import './App.css'
 import willitdryT from "./assets/willitdry.png"
 import livePictureT from "./assets/livepictures.png"
 
 function App() {
+  const [state, handleSubmit] = useForm("xojnyavz");
   const [downloadCVText, setDownloadCVText] = useState<String>("Fiche Personnage")
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
 
   function downloadCV() {
     const elem = document.createElement('a');
@@ -90,20 +95,20 @@ function App() {
 
           <div className="nes-container with-title">
             <p className="title">Formulaire de Contact</p>
-            <form>
-              <div className="nes-field">
-                <label htmlFor="name_field">Nom / Pseudo</label>
-                <input type="text" id="name_field" className="nes-input" placeholder="Aventurier" />
-              </div>
-
+            <form onSubmit={handleSubmit}>
               <div className="nes-field mt-small">
                 <label htmlFor="email_field">Email</label>
-                <input type="email" id="email_field" className="nes-input" placeholder="ton@email.com" />
+                <input type="email" name="email" id="email_field" className="nes-input" placeholder="ton@email.com" />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
               </div>
 
               <div className="nes-field mt-small">
                 <label htmlFor="textarea_field">Message</label>
-                <textarea id="textarea_field" className="nes-textarea" placeholder="Quelle est votre requête ?"></textarea>
+                <textarea id="textarea_field" name='message' className="nes-textarea" placeholder="Quelle est votre requête ?"></textarea>
               </div>
 
               <div className="form-actions mt-small">
