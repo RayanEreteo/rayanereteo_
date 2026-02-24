@@ -10,7 +10,7 @@ function App() {
   const [state, handleSubmit] = useForm("xojnyavz");
   const [downloadCVText, setDownloadCVText] = useState<String>("Fiche Personnage")
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return <p>Merci pour le message !</p>;
   }
 
   function downloadCV() {
