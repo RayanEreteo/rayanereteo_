@@ -22,7 +22,7 @@ function Contact() {
 
                 <div className="nes-container with-title">
                     <p className="title">Formulaire de Contact</p>
-                    <form onSubmit={handleSubmit}>
+                    { state.succeeded == false ? <form onSubmit={handleSubmit}>
                         <div className="nes-field mt-small">
                             <label htmlFor="email_field">Email</label>
                             <input type="email" name="email" id="email_field" className="nes-input" placeholder="ton@email.com" />
@@ -41,7 +41,7 @@ function Contact() {
                         <div className="form-actions mt-small">
                             <button type="submit" className="nes-btn is-primary">Envoyer</button>
                         </div>
-                    </form>
+                    </form> : <p>Merci !</p>}
                 </div>
             </div>
         </div>
