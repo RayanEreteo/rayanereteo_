@@ -85,11 +85,11 @@ function App() {
             <p className="title">Coordonnées</p>
             <div className="contact-item">
               <i className="nes-icon gmail is-small"></i>
-              <span>rayan.ereteo@email.com</span>
+              <span>ereteo.rayan1@gmail.com</span>
             </div>
             <div className="contact-item mt-small">
               <i className="nes-icon whatsapp is-small"></i>
-              <span>06 00 00 00 00</span>
+              <span>07 44 54 35 56</span>
             </div>
           </div>
 
